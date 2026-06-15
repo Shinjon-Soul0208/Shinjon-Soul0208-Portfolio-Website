@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinjon Das | Cybersecurity & DevSecOps Engineer</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Portfolio of Shinjon Das, Cybersecurity & DevSecOps Engineer with 4 years of experience specializing in Cloud Security, DevOps , Azure , Web Engineering, and AI/ML integrations.">
+    <meta name="keywords" content="Shinjon Das, Portfolio, Cybersecurity Engineer, DevSecOps, DevOps, AI, Machine Learning, Web Engineering, Three.js, GSAP, Secure Development">
+    <meta name="author" content="Shinjon Das">
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shinjon Das | Cybersecurity & DevSecOps Engineer">
+    <meta property="og:description" content="Portfolio of Shinjon Das, Cybersecurity Engineer specializing in DevSecOps automation, secure Web Engineering, and intelligent AI/ML systems.">
+    
+    <!-- Google Fonts: Syne (Headings) & Plus Jakarta Sans (Body & UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.6">
+    
+    <!-- Inline SVG Favicon (Solves 404 console warning) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+</head>
+<body>
+    <!-- Custom Cursor Follower -->
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+    <div class="custom-cursor-circle" id="custom-cursor-circle"></div>
+
+    <!-- 3D Anti-Gravity Background Canvas -->
+    <canvas id="three-bg-canvas"></canvas>
+
+    <!-- Structural Grid Lines (Arco Webflow Template Aesthetic) -->
+    <div class="grid-overlay">
+        <div class="grid-line line-1"></div>
+        <div class="grid-line line-2"></div>
+        <div class="grid-line line-3"></div>
+        <div class="grid-line line-4"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-inner container flex-row-between">
+            <a href="#" class="logo magnetic" id="nav-logo">
+                <span class="logo-text">SHINJON.</span>
+                <span class="logo-tag">SEC</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul class="flex-row">
+                    <li><a href="#about" class="nav-link magnetic">About</a></li>
+                    <li><a href="#projects" class="nav-link magnetic">Projects</a></li>
+                    <li><a href="#contact" class="nav-link magnetic">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="mailto:shinjondas924@gmail.com" class="btn btn-header magnetic" id="header-contact-btn">Let's Talk</a>
+            </div>
+            
+            <!-- Hamburger Menu Toggle (Mobile) -->
+            <button class="menu-toggle magnetic" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger-line line-top"></span>
+                <span class="hamburger-line line-bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner flex-column-center">
+            <ul class="mobile-nav-links flex-column-center">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <a href="mailto:shinjondas924@gmail.com" class="btn btn-primary btn-mobile-cta" id="mobile-menu-cta">Let's Talk</a>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container grid-hero">
+                <div class="hero-left flex-column-start">
+                    <div class="badge fade-in-up">AVAILABLE FOR WORK</div>
+                    <h1 class="hero-title">
+                        <span class="title-line-mask">
+                            <span class="title-line-text title-outline">SHINJON</span>
+                        </span>
+                        <span class="title-line-mask">
+                            <span class="title-line-text title-solid">DAS</span>
+                        </span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up">
+                        Cybersecurity Engineer specializing in DevOps ,Azure , secure web architectures, and intelligent AI/ML systems.
+                    </p>
+                    <div class="hero-meta fade-in-up flex-row">
+                        <div class="meta-item">
+                            <span class="meta-number">04+</span>
+                            <span class="meta-label">Years of<br>Experience</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-number">10+</span>
+                            <span class="meta-label">Projects<br>Completed</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons fade-in-up flex-row">
+                        <a href="#projects" class="btn btn-primary magnetic" id="hero-projects-btn">Explore Works</a>
+                        <a href="#about" class="btn btn-secondary magnetic" id="hero-about-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-right flex-center fade-in">
+                    <!-- Interactive Floating 3D Crystal Mesh Container -->
+                    <div class="hero-canvas-container" id="hero-canvas-container">
+                        <div class="floating-ring"></div>
+                        <canvas id="hero-3d-canvas"></canvas>
+                        <div class="canvas-hint">Drag & Hover to Interact</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Experience Section -->
+        <section id="about" class="about-section section-padding border-top">
+            <div class="container grid-about">
+                <div class="about-header">
+                    <span class="section-tag">[01] DEFENSE & INTELLIGENCE</span>
+                    <h2 class="section-title">THE ARCHITECTURE BEHIND TRUST & COGNITION</h2>
+                </div>
+                <div class="about-desc">
+                    <p class="lead-text">
+                       A visionary Cybersecurity Engineer and Computer Science scholar, I fuse resilient architectures with intelligent AI to craft secure, user‑centric systems. With a portfolio of 10+ projects, financial acumen, and IEEE collaboration, I thrive on innovation, teamwork, and challenges—driven by a passion to safeguard technology while shaping solutions that empower society.
+                    <p class="body-text">
+                        My philosophy is based on defensive-by-default architecture and cognitive intelligence and Finance Management . Outside of core systems engineering, I am a professional guitarist and basketball player, blending discipline and creative expression into my technical approach.
+                    </p>
+                    
+                    <!-- Skills Grid -->
+                    <div class="skills-container">
+                        <h3 class="subsection-title">Core Competencies</h3>
+                        <div class="skills-grid">
+                            <span class="skill-pill">Cybersecurity &amp; Auditing</span>
+                            <span class="skill-pill">DevSecOps &amp; CI/CD</span>
+                            <span class="skill-pill">Web Engineering (JS/React)</span>
+                            <span class="skill-pill">AI &amp; Machine Learning</span>
+                            <span class="skill-pill">Python &amp; TensorFlow</span>
+                            <span class="skill-pill">Financial Markets</span>
+                            <span class="skill-pill">Investment Banking</span>
+                            <span class="skill-pill">Finances</span>
+                            <span class="skill-pill">Cloud Security (AWS/GCP)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-timeline flex-column-start">
+                    <h3 class="subsection-title">My Journey</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-meta flex-row-between">
+                            <span class="timeline-role">Joint Working Team (JWT) Member @ IEEE SB MUJ</span>
+                            <span class="timeline-date">2025 - 2026</span>
+                        </div>
+                        <p class="timeline-details">
+                            Co-organizing competitive hackathons, contributing to student branch technical projects, and developing secure WebGL monitoring tools and automated delivery workflows.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-meta flex-row-between">
+                            <span class="timeline-role">B.Tech in Computer Science Engineering @ MUJ</span>
+                            <span class="timeline-date">2025 - 2029</span>
+                        </div>
+                        <p class="timeline-details">
+                            Focusing on systems engineering, database structures (SQLite), network security, and machine learning models. Active hackathon participant (Team Leo).
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-meta flex-row-between">
+                            <span class="timeline-role">Independent Systems &amp; Web Architect</span>
+                            <span class="timeline-date">2024 - Present</span>
+                        </div>
+                        <p class="timeline-details">
+                            Researched cloud vulnerability mitigations, audited API endpoints, built customized interactive WebGL layouts, and developed secure client-side templates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Dynamic GitHub Integration) -->
+        <section id="projects" class="projects-section section-padding border-top">
+            <div class="container">
+                <div class="projects-header flex-row-between flex-wrap">
+                    <div>
+                        <span class="section-tag">[02] DYNAMIC WORKS</span>
+                        <h2 class="section-title">FEATURED GITHUB PROJECTS</h2>
+                    </div>
+                    <div class="github-sync-info">
+                        <span class="sync-dot animate-pulse"></span>
+                        <span class="sync-text">Live Sync with GitHub API</span>
+                    </div>
+                </div>
+
+                <!-- GitHub Projects Grid -->
+                <div class="projects-grid" id="github-projects-grid">
+                    <!-- Skeleton Cards (Shown while loading) -->
+                    <div class="project-card-wrapper float-w-1">
+                        <div class="skeleton-card">
+                            <div class="skeleton-line line-short"></div>
+                            <div class="skeleton-line line-long"></div>
+                            <div class="skeleton-line line-mid"></div>
+                            <div class="skeleton-footer flex-row-between">
+                                <div class="skeleton-footer-item"></div>
+                                <div class="skeleton-footer-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-wrapper float-w-2">
+                        <div class="skeleton-card">
+                            <div class="skeleton-line line-short"></div>
+                            <div class="skeleton-line line-long"></div>
+                            <div class="skeleton-line line-mid"></div>
+                            <div class="skeleton-footer flex-row-between">
+                                <div class="skeleton-footer-item"></div>
+                                <div class="skeleton-footer-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-wrapper float-w-3">
+                        <div class="skeleton-card">
+                            <div class="skeleton-line line-short"></div>
+                            <div class="skeleton-line line-long"></div>
+                            <div class="skeleton-line line-mid"></div>
+                            <div class="skeleton-footer flex-row-between">
+                                <div class="skeleton-footer-item"></div>
+                                <div class="skeleton-footer-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Footer Section -->
+        <section id="contact" class="contact-section section-padding border-top">
+            <div class="container grid-contact">
+                <div class="contact-left">
+                    <span class="section-tag">[03] SECURE COLLAB</span>
+                    <h2 class="contact-headline">LET'S SECURE<br>YOUR SYSTEMS.</h2>
+                    <p class="contact-text">
+                        Have a security audit, a DevSecOps pipeline bottleneck, or an AI/ML integration puzzle? Let's initiate a secure transmission.
+                    </p>
+                </div>
+                <div class="contact-right flex-column-end">
+                    <!-- Big, Magnetic Email Callouts -->
+                    <div class="email-wrapper flex-column-end" style="width: 100%;">
+                        <a href="mailto:shinjondas924@gmail.com" class="big-email-link magnetic" id="big-email">
+                            shinjondas924@gmail.com
+                            <span class="email-arrow"><i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                    </div>
+
+                    <div class="email-wrapper flex-column-end" style="width: 100%; margin-top: -20px; margin-bottom: 20px;">
+                        <span class="email-badge-label">COLLEGE OFFICIAL MAIL ID</span>
+                        <a href="mailto:shinjon.2502050960@muj.manipal.edu" class="big-email-link magnetic" id="big-email-college" style="margin-bottom: 20px; font-size: clamp(1.2rem, 3vw, 2.2rem);">
+                            shinjon.2502050960@muj.manipal.edu
+                            <span class="email-arrow"><i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                    </div>
+
+                    <div class="social-links flex-row">
+                        <a href="https://github.com/Shinjon-Soul0208" target="_blank" rel="noopener" class="social-link magnetic" id="footer-github-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shinjon-das-sd0208/" target="_blank" rel="noopener" class="social-link magnetic" id="footer-linkedin-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Meta Info -->
+            <div class="footer-meta border-top">
+                <div class="container flex-row-between flex-wrap">
+                    <span class="copyright">&copy; 2026 Shinjon Das.</span>
+                    <div class="footer-time-container flex-row">
+                        <span class="local-time-label">LOCAL TIME:</span>
+                        <span class="local-time" id="footer-local-time">00:00:00 AM GMT+5:30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CDN Script Loads -->
+    <!-- Three.js Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.147.0/three.min.js"></script>
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    
+    <!-- Lucide Icons (Render SVG icons easily) -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom Three.js Scene Script -->
+    <script src="three-bg.js?v=1.6"></script>
+    
+    <!-- Custom Application/GSAP Logic Script -->
+    <script src="app.js?v=1.6"></script>
+</body>
+</html>
